@@ -35,7 +35,7 @@ The ROS drivers of utilized sensors are installed and tested under the operation
 -  [velodyne lidar driver](http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16)
 -  [realsense camera driver](https://github.com/IntelRealSense/realsense-ros)
 
-There is also another [ublox ROS driver](https://github.com/KumarRobotics/ublox) maintained by [KumarRobotics](https://github.com/KumarRobotics), which is more popular. The outputs topics from these two drivers are different, but both can be transferred to `RINEX` file easily. `xsens-mti-g-710` can provide GNSS position, but its RAW GNSS measurments are not available, so `ublox M8T`is utilized.
+There is also another [ublox ROS driver](https://github.com/KumarRobotics/ublox) maintained by [KumarRobotics](https://github.com/KumarRobotics), which is more popular. The output topics from these two drivers are different, but both can be transferred to `RINEX` file easily. `xsens-mti-g-710` can provide GNSS position, but its RAW GNSS measurments are not available, so `ublox M8T`is utilized.
 
 ## sensor calibration
 
@@ -59,6 +59,7 @@ The space transformation between lidar and camera is computed by 3D-2D PnP algor
   <img src="./pic/lidar_points.png" alt="drawing" width="300" />
 </p>
 The RMSE and transformation matrix:
+
 ```
 RMSE of the 3D-2D reprojection errors: 1.194 pixels. 
 T_lidar_cam:[
