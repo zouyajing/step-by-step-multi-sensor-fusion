@@ -71,7 +71,7 @@ T_lidar_cam:[
 The The space transformation between lidar and IMU is computed by (a) hand-eye calibration and (b) batch optimization, implemented by [APRIL-ZJU](https://github.com/APRIL-ZJU/lidar_IMU_calib). One example calibration image is shown below.
 
 <p align="center">
-  <img src="./pic/lidar_imu_calib.png" alt="drawing" width="300" />
+  <img src="./pic/lidar_imu_calib.png" alt="drawing" width="800" />
 </p>
 
 The transformation matrix and time offest:
