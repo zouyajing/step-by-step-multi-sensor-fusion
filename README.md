@@ -128,7 +128,7 @@ time offset: -0.015
  - `/imu/data` is the imu data from `xsens-mti-g-710`
  - `/gnss` is the GNSS output from `xsens-mti-g-710`
  - `/filter/positionlla` is the filtered position from `xsens-mti-g-710`
- - `/filter/quaternion` is the filter quaternion from `xsens-mti-g-710`
+ - `/filter/quaternion` is the filtered quaternion from `xsens-mti-g-710`
  - others are from `ublox M8T`
  
  
