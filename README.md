@@ -104,22 +104,22 @@ time offset: -0.015
  1. open one terminal to launch VLP-16
     source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash
     roslaunch velodyne_pointcloud VLP16_points.launch
-2. open one terminal to launch realsense D435 camera
-   source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash
-   roslaunch realsense2_camera rs_camera.launch
-3. open one terminal to launch xsens-mti-g-710
-   source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash
-   roslaunch xsens_mti_driver xsens_mti_node.launch 
-4. open one terminal to launch ublox M8T
-   source ~/rw_slam/devel/setup.bash 
-   roslaunch ublox_driver ublox_driver.launch
-5. wait until the ublox output is stable and then sync time
-   sudo su
-   source /opt/ros/melodic/setup.bash
-   source rw_slam/devel/setup.bash
-   rosrun ublox_driver sync_system_time
-6. use [rviz] or [rostopic echo] to check the relative messages, if all of them are valid,record the relative topics
-   rosbag record /camera/color/image_raw /velodyne_points /gnss /filter/positionlla /filter/quaternion /imu/data /ublox_driver/ephem /ublox_driver/glo_ephem /ublox_driver/iono_params /ublox_driver/range_meas /ublox_driver/receiver_lla /ublox_driver/receiver_pvt /ublox_driver/time_pulse_info
+ 2. open one terminal to launch realsense D435 camera
+    source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash
+    roslaunch realsense2_camera rs_camera.launch
+ 3. open one terminal to launch xsens-mti-g-710
+    source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash
+    roslaunch xsens_mti_driver xsens_mti_node.launch 
+ 4. open one terminal to launch ublox M8T
+    source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash 
+    roslaunch ublox_driver ublox_driver.launch
+ 5. wait until the ublox output is stable and then sync time
+    sudo su
+    source /opt/ros/melodic/setup.bash
+    source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash
+    rosrun ublox_driver sync_system_time
+ 6. use [rviz] or [rostopic echo] to check the relative messages, if all of them are valid,record the relative topics
+    rosbag record /camera/color/image_raw /velodyne_points /gnss /filter/positionlla /filter/quaternion /imu/data /ublox_driver/ephem /ublox_driver/glo_ephem     /ublox_driver/iono_params /ublox_driver/range_meas /ublox_driver/receiver_lla /ublox_driver/receiver_pvt /ublox_driver/time_pulse_info
  ```
  These topics are about:
  - `/camera/color/image_raw` is the color image data from `realsense D435` .
