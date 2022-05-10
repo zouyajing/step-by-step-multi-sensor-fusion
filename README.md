@@ -60,13 +60,12 @@ The space transformation between lidar and camera is computed by 3D-2D PnP algor
 </p>
 The RMSE and transformation matrix:
 ```
-RMSE of the 3D-2D reprojection errors: `1.194 pixels`. 
+RMSE of the 3D-2D reprojection errors: 1.194 pixels. 
 T_lidar_cam:[
 -0.05431967, -0.99849605,  0.0074169, 0.04265499, 
 0.06971394, -0.01120208, -0.99750413, -0.16234957,
 0.99608701, -0.05366703,  0.07021759, -0.03513243,
 0, 0, 0, 1]
-
 ```
 
 The The space transformation between lidar and IMU is computed by (a) hand-eye calibration and (b) batch optimization, implemented by [APRIL-ZJU](https://github.com/APRIL-ZJU/lidar_IMU_calib). One example calibration image is shown below.
@@ -74,6 +73,7 @@ The The space transformation between lidar and IMU is computed by (a) hand-eye c
 <p align="center">
   <img src="./pic/lidar_imu_calib.png" alt="drawing" width="300" />
 </p>
+
 The transformation matrix and time offest:
 ``` 
 T_imu_lidar:[
@@ -83,15 +83,17 @@ T_imu_lidar:[
 0, 0, 0, 1]
 time offset: -0.015
 ```
+
  Also, the intrtrinsic calibration parameters of the color camera inside realsense D435 is
+ 
  ```
-height: 480
-width: 640
-distortion_model: "plumb_bob"
-D: [0.0, 0.0, 0.0, 0.0, 0.0]
-K: [618.8675537109375, 0.0, 315.9486083984375, 0.0, 619.0439453125, 246.67913818359375, 0.0, 0.0, 1.0]
-R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
-P: [618.8675537109375, 0.0, 315.9486083984375, 0.0, 0.0, 619.0439453125, 246.67913818359375, 0.0, 0.0, 0.0, 1.0, 0.0]
+ height: 480
+ width: 640
+ distortion_model: "plumb_bob"
+ D: [0.0, 0.0, 0.0, 0.0, 0.0]
+ K: [618.8675537109375, 0.0, 315.9486083984375, 0.0, 619.0439453125, 246.67913818359375, 0.0, 0.0, 1.0]
+ R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+ P: [618.8675537109375, 0.0, 315.9486083984375, 0.0, 0.0, 619.0439453125, 246.67913818359375, 0.0, 0.0, 0.0, 1.0, 0.0]
  ```
  
  ## dataset recording
