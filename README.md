@@ -116,7 +116,7 @@ P: [618.8675537109375, 0.0, 315.9486083984375, 0.0, 0.0, 619.0439453125, 246.679
    source /opt/ros/melodic/setup.bash
    source rw_slam/devel/setup.bash
    rosrun ublox_driver sync_system_time
-6. use `rviz` or `rostopic echo` to check the relative messages, if all of them are valid,record the relative topics
+6. use [rviz] or [rostopic echo] to check the relative messages, if all of them are valid,record the relative topics
    rosbag record /camera/color/image_raw /velodyne_points /gnss /filter/positionlla /filter/quaternion /imu/data /ublox_driver/ephem /ublox_driver/glo_ephem /ublox_driver/iono_params /ublox_driver/range_meas /ublox_driver/receiver_lla /ublox_driver/receiver_pvt /ublox_driver/time_pulse_info
  ```
  These topics are about:
