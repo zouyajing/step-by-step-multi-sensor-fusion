@@ -50,7 +50,7 @@ source /opt/ros/kinetic/setup.bash
 source ${YOUR_CATKIN_WORKSPACE}/devel/setup.bash
 rosrun ublox_driver sync_system_time
 ```
-Next step is to use PPSfrom the GNSS receiver to trigger all other sensors.
+Next step is to use PPS from the GNSS receiver to trigger all other sensors.
 
 The space transformation between lidar and camera is computed by 3D-2D PnP algorithm implemented by [heethesh](https://github.com/heethesh/lidar_camera_calibration). Two example pics of manually picking 2D pixls and 3D points are shown below.
 
