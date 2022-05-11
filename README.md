@@ -24,7 +24,7 @@ The above sensors are assembled on a aluminum plate by screws.
 </p>
 Their 2D(left) and 3D(right) body coordinate systems or are appoximate to: 
 <p align="center">
-  <img src="./pic/3d-2d-sensors.png" alt="drawing" width="300" />
+  <img src="./pic/3d_2d_sensor.jpg" alt="drawing" width="300" />
 </p>
 
 ## sensor testing
