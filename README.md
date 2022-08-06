@@ -20,7 +20,7 @@ Four different sensors are utilized including:
 The above sensors are assembled on a aluminum plate by screws.
 
 <p align="center">
-  <img src="./pic/sensor-assembling.jpeg" alt="drawing" width="600"/>
+  <img src="./pic/sensors.jpeg" alt="drawing" width="600"/>
 </p>
 Their 2D(left) and 3D(right) body coordinate systems or are appoximate to: 
 <p align="center">
