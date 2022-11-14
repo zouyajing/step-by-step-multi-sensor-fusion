@@ -142,6 +142,7 @@ T_imu_cam = T_imu_lidar * T_cam_lidar. inverse() =
  ## multiple sensor fusion
  
  [multiple sensor fusion](https://github.com/zouyajing/multi_sensor_loclization_and_mapping)
+ 
  The implementation is based on KITTI dataset. Need to be adapted to self-collected dataset.
  
  
